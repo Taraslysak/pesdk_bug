@@ -14,6 +14,9 @@ import {NavigationContainer} from '@react-navigation/native';
 import RootNavigator from './src/navigators/RootNavigator';
 
 const App = () => {
+  // REMARK: to be able to spot the buggy behaviour
+  //  you would need to switch system language to Turkish and reload the device
+
   return (
     <NavigationContainer>
       <RootNavigator />

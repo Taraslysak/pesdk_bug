@@ -45,6 +45,8 @@ const configuration: {[K in CameraMode]: Configuration} = {
 export default function EditorScreen({route, navigation}: any): ReactElement {
   const {cameraMode, base64} = route.params;
 
+  // REMARK: if camera mode is set to 'AVATAR' navigating to this screen will force app to crash with error on android side
+
   const handleOnExport = (args: PhotoEditorResult) => {
     navigation.navigate('Preview', {image: args.image});
   };
